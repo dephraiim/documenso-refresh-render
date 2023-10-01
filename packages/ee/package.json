@@ -1,0 +1,19 @@
+{
+  "name": "@documenso/ee",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "COMMERCIAL",
+  "files": [
+    "client-only/",
+    "server-only/",
+    "universal/"
+  ],
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@documenso/lib": "*",
+    "@documenso/prisma": "*"
+  }
+}

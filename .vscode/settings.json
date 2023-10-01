@@ -1,0 +1,10 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.useAliasesForRenames": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
