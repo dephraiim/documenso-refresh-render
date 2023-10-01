@@ -26,7 +26,11 @@ services:
         fromDatabase:
           name: documenso-db
           property: connectionString
-      # No render.yml equivalent for DIRECT_DATABASE_URL since it seems specific to a local setup
+
+      - key: NEXT_PRIVATE_DIRECT_DATABASE_URL
+        fromDatabase:
+          name: documenso-db
+          property: connectionString
 
       # URLs
       - key: NEXT_PUBLIC_WEBAPP_URL
