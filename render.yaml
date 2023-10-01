@@ -3,8 +3,8 @@ services:
     name: documenso-app
     env: node
     plan: free
-    buildCommand: npm i && npm run build
-    startCommand: npx prisma migrate deploy && npm run start
+    buildCommand: npm i && npm run build:web
+    startCommand: npx prisma migrate deploy --schema packages/prisma/schema.prisma && npm run start
     healthCheckPath: /api/trpc/hello
 
     envVars:
