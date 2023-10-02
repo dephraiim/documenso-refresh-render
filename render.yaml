@@ -12,6 +12,9 @@ services:
       - key: NODE_VERSION
         value: 18.17.0
 
+      - key: PORT
+        value: 10000
+
       # Auth
       - key: NEXTAUTH_URL
         fromService:
